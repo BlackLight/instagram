@@ -44,6 +44,7 @@ class LoginResponseUser(BaseFullResponseUser, SerializableAttrs):
     interop_messaging_user_fbid: int
     is_using_unified_inbox_for_direct: bool
     professional_conversion_suggested_account_type: Optional[int]
+    can_see_primary_country_in_settings: bool = True
 
 
 @dataclass
